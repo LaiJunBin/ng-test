@@ -1,3 +1,15 @@
 <p>
   lesson1 works!
 </p>
+
+{{name}}
+
+<input type="text" [(ngModel)]="name">
+<a [href]="url">Google</a>
+<button (click)="sayHello()">Say Hello</button>
+
+<hr>
+
+NT$: <input type="text" [(ngModel)]="nt"><br>
+US$: {{ nt * 30 }} <br>
+JP$: {{ nt / 5 }} <br>
