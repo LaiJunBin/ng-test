@@ -1,3 +1,23 @@
 <p>
   lesson4 works!
 </p>
+
+{{now}}
+<br>
+{{now | date:'yyyy/mm/dd'}}
+
+<hr>
+
+{{obj}}
+<br>
+{{obj | json}}
+
+<hr>
+<input type="text" [(ngModel)]="account.account"><br>
+<input type="text" [(ngModel)]="account.password"><br>
+
+{{ account | json}}
+
+<hr>
+
+<app-lesson3></app-lesson3>
