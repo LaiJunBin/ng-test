@@ -1,0 +1,22 @@
+<p *ngIf="show; else noShow">
+  lesson2 works!
+</p>
+
+<ng-template #noShow>
+  <h1>Hello!!!</h1>
+</ng-template>
+
+<div [ngSwitch]="show">
+  <div *ngSwitchCase="true">true</div>
+  <div *ngSwitchCase="false">false</div>
+  <div *ngSwitchDefault>default</div>
+</div>
+
+<input type="text" [(ngModel)]="score" placeholder="Please Input Score">
+
+<div [ngSwitch]="score >= 60">
+  <div *ngSwitchCase="true">好棒</div>
+  <div *ngSwitchCase="false">好笨</div>
+</div>
+
+<button (click)="show = !show">Toggle Work</button>
