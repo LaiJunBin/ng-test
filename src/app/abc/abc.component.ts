@@ -1,3 +1,4 @@
+import { BmiService } from './../bmi.service';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -8,10 +9,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class AbcComponent implements OnInit {
 
   @Output() abcButtonClick: EventEmitter<string> = new EventEmitter<string>();
-
-  constructor() { }
+  
+  constructor(private bmiService: BmiService) { }
 
   ngOnInit() {
+    console.log(this.bmiService.calBMI(123, 45));
   }
 
   abcClick() {
