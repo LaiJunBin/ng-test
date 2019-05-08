@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lesson1',
@@ -10,6 +10,7 @@ export class Lesson1Component implements OnInit {
   name = 'Lai';
   url = 'https://google.com';
   @Input() nt = 0;
+  @Output() MoneyChange: EventEmitter<number> = new EventEmitter<number>();
 
   constructor() { }
 
@@ -19,5 +20,7 @@ export class Lesson1Component implements OnInit {
   sayHello() {
     alert('Hello ' + this.name);
   }
-
+  onMoneyChange() {
+    this.MoneyChange.emit(this.nt);
+  }
 }

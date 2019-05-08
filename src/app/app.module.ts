@@ -10,6 +10,7 @@ import { Lesson3Component } from './lesson3/lesson3.component';
 import { Lesson4Component } from './lesson4/lesson4.component';
 import { Lesson5Component } from './lesson5/lesson5.component';
 import { AbcComponent } from './abc/abc.component';
+import { Lesson6Component } from './lesson6/lesson6.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AbcComponent } from './abc/abc.component';
     Lesson4Component,
     Lesson5Component,
     AbcComponent,
+    Lesson6Component,
   ],
   imports: [
     BrowserModule,

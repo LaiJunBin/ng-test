@@ -10,6 +10,6 @@
 
 <hr>
 
-NT$: <input type="text" [(ngModel)]="nt"><br>
+NT$: <input type="text" [(ngModel)]="nt" (ngModelChange)="onMoneyChange()"><br>
 US$: {{ nt * 30 }} <br>
 JP$: {{ nt / 5 }} <br>
