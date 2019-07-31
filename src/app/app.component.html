@@ -1,8 +1,5 @@
-<!-- <app-lesson1></app-lesson1> -->
-<!-- <app-lesson2></app-lesson2> -->
-<!-- <app-lesson3></app-lesson3> -->
-<!-- <app-lesson4></app-lesson4> -->
-<!-- <app-lesson5></app-lesson5> -->
-<app-abc (abcButtonClick)="abcClickEvent($event)"></app-abc>
-<!-- <app-lesson6></app-lesson6> -->
-<router-outlet></router-outlet>
+<p> {{ bSubject | async }} </p>
+<button (click)="go()">Go</button>
+
+<button (click)="getBook(1)">Get Book 1</button>
+<button (click)="getBooks()">Get Books</button>
